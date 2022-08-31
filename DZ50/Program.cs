@@ -43,10 +43,10 @@ int[,] resultMatrix = GetArray(rows, columns);
 PrintArray(resultMatrix);
 Console.WriteLine();
 
-if (a <= rows && b <= columns)
+if (a > 0 && a <= rows && b > 0 && b <= columns)
 {
-   
-    Console.WriteLine(resultMatrix[a - 1 , b - 1]);
+
+    Console.WriteLine(resultMatrix[a - 1, b - 1]);
 }
 else
     Console.WriteLine("В данном массиве элемента с такими позициями не существует!");
